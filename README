@@ -1,4 +1,4 @@
-We are pleased to announce the version 1.2 test release of GNU Hello.
+We are pleased to announce the version 2.1 release of GNU Hello.
 All reported bugs in previous test releases have been fixed.
 Some bugs surely remain.
 
@@ -13,6 +13,6 @@ the program is an enhancement of the one published in that book.
 See the file INSTALL for building and installation instructions.
 
 Please send all bug reports by electronic mail to:
-    bug-gnu-hello@prep.ai.mit.edu
+    bug-gnu-hello@gnu.org
 
 GNU Hello is free software.  See the file COPYING for copying conditions.
