@@ -1,25 +1,20 @@
-This manual is for GNU Hello (version 2.3, 26 June 2007), which prints
-a friendly greeting (and serves as an example GNU package).
+This is hello.info, produced by makeinfo version 4.13 from hello.texi.
 
-   Copyright (C) 1992, 1993, 1996, 2002, 2005, 2006, 2007 Free Software
-Foundation, Inc.
+This manual is for GNU Hello (version 2.4, 28 November 2008), which
+prints a friendly greeting (and serves as an example GNU package).
+
+   Copyright (C) 1992, 1993, 1996, 2002, 2005, 2006, 2007, 2008 Free
+Software Foundation, Inc.
 
      Permission is granted to copy, distribute and/or modify this
      document under the terms of the GNU Free Documentation License,
      Version 1.2 or any later version published by the Free Software
-     Foundation; with no Invariant Sections, with the Front-Cover Texts
-     being "A GNU Manual," and with the Back-Cover Texts as in (a)
-     below.  A copy of the license is included in the section entitled
-     "GNU Free Documentation License."
-
-     (a) The FSF's Back-Cover Text is: "You are free to copy and modify
-     this GNU Manual. Buying copies from GNU Press supports the FSF in
-     developing GNU and promoting software freedom."
+     Foundation; with no Invariant Sections, with no Front-Cover Texts,
+     and with no Back-Cover Texts.  A copy of the license is included
+     in the section entitled "GNU Free Documentation License".
 
 INFO-DIR-SECTION Basics
 START-INFO-DIR-ENTRY
-This is hello.info, produced by makeinfo version 4.8.90 from hello.texi.
-
 * Hello: (hello).               Hello, GNU world.
 END-INFO-DIR-ENTRY
 
@@ -29,7 +24,7 @@ File: hello.info,  Node: Top,  Next: Overview,  Up: (dir)
 GNU Hello
 *********
 
-This manual is for GNU Hello (version 2.3, 26 June 2007).
+This manual is for GNU Hello (version 2.4, 28 November 2008).
 
 * Menu:
 
@@ -37,7 +32,7 @@ This manual is for GNU Hello (version 2.3, 26 June 2007).
 * Sample output::	Sample output from `hello'.
 * Invoking hello::	How to run `hello'.
 * Reporting bugs::	Sending bug reports and feature suggestions.
-* Copying this manual:: Copying and sharing this documentation.
+* GNU Free Documentation License:: Copying and sharing this documentation.
 * Concept index::	Index of concepts.
 
 
@@ -46,14 +41,11 @@ File: hello.info,  Node: Overview,  Next: Sample output,  Prev: Top,  Up: Top
 1 Overview
 **********
 
-The GNU `hello' program produces a familiar, friendly greeting.  It
-allows nonprogrammers to use a classic computer science tool which
-would otherwise be unavailable to them.  Because it is protected by the
-GNU General Public License, users are free (in perpetuity) to share and
-change it.
-
-   For the latest updates and other information, please visit the GNU
-Hello home page at `http://www.gnu.org/software/hello/'.
+The GNU `hello' program (`http://www.gnu.org/software/hello/') produces
+a familiar, friendly greeting.  It allows nonprogrammers to use a
+classic computer science tool which would otherwise be unavailable to
+them.  Because it is protected by the GNU General Public License, users
+are free (in perpetuity) to share and change it.
 
    Not to spoil the joke, but of course the practical purpose of GNU
 Hello is to serve as a minimal example of a GNU package.  So, although
@@ -97,7 +89,7 @@ not embodied in the standards, using other GNU packages and features:
 examples in a variety of other programming languages; see the Gettext
 home page at `http://www.gnu.org/software/gettext/'.
 
-   GNU `hello' was written by Mike Haertel, David MacKenzie, Jan
+   GNU Hello was written by Mike Haertel, David MacKenzie, Jan
 Brittenson, Charles Hannum, Roland McGrath, Noah Friedman, Karl
 Eichwalder, Karl Berry, and The King.
 
@@ -107,7 +99,7 @@ File: hello.info,  Node: Sample output,  Next: Invoking hello,  Prev: Overview, 
 2 Sample output
 ***************
 
-Here are some realistic examples of running GNU `hello'.
+Here are some realistic examples of running GNU Hello.
 
    This is the output of the command `hello':
 
@@ -131,11 +123,13 @@ The format for running the `hello' program is:
 
      hello OPTION ...
 
+   With no options, `hello' prints the greeting `Hello, world!'.
+
    `hello' supports the following options:
 
 `--greeting=TEXT'
 `-g TEXT'
-     Output TEXT.
+     Output TEXT instead of the default greeting.
 
 `--help'
 `-h'
@@ -150,27 +144,32 @@ The format for running the `hello' program is:
 
 `--next-generation'
 `-n'
-     Output a modern greeting, possibly including box-drawing
-     characters or other fancy stuff, using the Unicode UTF-8 locale.
+     Output `Hello, world!', but possibly including box-drawing
+     characters or other fancy stuff, especially in translated locales.
+     (If you would like to volunteer to translate messages for GNU
+     packages, please see `http://translationproject.org'.)
 
 `--traditional'
 `-t'
-     Use the traditional greeting message `hello, world' rather than
-     the more modern `Hello, world!'.
+     Output the traditional greeting message `hello, world'.
 
 `--version'
 `-v'
-     Print the version number and licensing information of `hello' on
+     Print the version number and licensing information of Hello on
      standard output and then exit successfully.
 
 
+   If more than one of the greeting options (`-g', `-n', `-t', and
+their long-named equivalents) is specified, whichever comes last takes
+precedence.
+
 
-File: hello.info,  Node: Reporting bugs,  Next: Copying this manual,  Prev: Invoking hello,  Up: Top
+File: hello.info,  Node: Reporting bugs,  Next: GNU Free Documentation License,  Prev: Invoking hello,  Up: Top
 
 4 Reporting bugs
 ****************
 
-To report bugs or suggest enhancements for GNU `hello', please send
+To report bugs or suggest enhancements for GNU Hello, please send
 electronic mail to <bug-hello@gnu.org>.
 
    For bug reports, please include enough information for the
@@ -202,25 +201,15 @@ Change Log: (emacs)Change Log.).  Please follow the existing coding
 style.
 
 
-File: hello.info,  Node: Copying this manual,  Next: Concept index,  Prev: Reporting bugs,  Up: Top
+File: hello.info,  Node: GNU Free Documentation License,  Next: Concept index,  Prev: Reporting bugs,  Up: Top
 
-Appendix A Copying this manual
-******************************
+Appendix A GNU Free Documentation License
+*****************************************
 
-* Menu:
+                     Version 1.3, 3 November 2008
 
-* GNU Free Documentation License::  License for copying this manual.
-
-
-File: hello.info,  Node: GNU Free Documentation License,  Up: Copying this manual
-
-A.1 GNU Free Documentation License
-==================================
-
-                      Version 1.2, November 2002
-
-     Copyright (C) 2000,2001,2002 Free Software Foundation, Inc.
-     51 Franklin St, Fifth Floor, Boston, MA  02110-1301, USA
+     Copyright (C) 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+     `http://fsf.org/'
 
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
@@ -321,6 +310,9 @@ A.1 GNU Free Documentation License
      works in formats which do not have any title page as such, "Title
      Page" means the text near the most prominent appearance of the
      work's title, preceding the beginning of the body of the text.
+
+     The "publisher" means any person or entity that distributes copies
+     of the Document to the public.
 
      A section "Entitled XYZ" means a named subunit of the Document
      whose title either is precisely XYZ or contains XYZ in parentheses
@@ -587,12 +579,29 @@ A.1 GNU Free Documentation License
   9. TERMINATION
 
      You may not copy, modify, sublicense, or distribute the Document
-     except as expressly provided for under this License.  Any other
-     attempt to copy, modify, sublicense or distribute the Document is
-     void, and will automatically terminate your rights under this
-     License.  However, parties who have received copies, or rights,
-     from you under this License will not have their licenses
-     terminated so long as such parties remain in full compliance.
+     except as expressly provided under this License.  Any attempt
+     otherwise to copy, modify, sublicense, or distribute it is void,
+     and will automatically terminate your rights under this License.
+
+     However, if you cease all violation of this License, then your
+     license from a particular copyright holder is reinstated (a)
+     provisionally, unless and until the copyright holder explicitly
+     and finally terminates your license, and (b) permanently, if the
+     copyright holder fails to notify you of the violation by some
+     reasonable means prior to 60 days after the cessation.
+
+     Moreover, your license from a particular copyright holder is
+     reinstated permanently if the copyright holder notifies you of the
+     violation by some reasonable means, this is the first time you have
+     received notice of violation of this License (for any work) from
+     that copyright holder, and you cure the violation prior to 30 days
+     after your receipt of the notice.
+
+     Termination of your rights under this section does not terminate
+     the licenses of parties who have received copies or rights from
+     you under this License.  If your rights have been terminated and
+     not permanently reinstated, receipt of a copy of some or all of
+     the same material does not give you any rights to use it.
 
  10. FUTURE REVISIONS OF THIS LICENSE
 
@@ -610,10 +619,44 @@ A.1 GNU Free Documentation License
      published (not as a draft) by the Free Software Foundation.  If
      the Document does not specify a version number of this License,
      you may choose any version ever published (not as a draft) by the
-     Free Software Foundation.
+     Free Software Foundation.  If the Document specifies that a proxy
+     can decide which future versions of this License can be used, that
+     proxy's public statement of acceptance of a version permanently
+     authorizes you to choose that version for the Document.
 
-A.1.1 ADDENDUM: How to use this License for your documents
-----------------------------------------------------------
+ 11. RELICENSING
+
+     "Massive Multiauthor Collaboration Site" (or "MMC Site") means any
+     World Wide Web server that publishes copyrightable works and also
+     provides prominent facilities for anybody to edit those works.  A
+     public wiki that anybody can edit is an example of such a server.
+     A "Massive Multiauthor Collaboration" (or "MMC") contained in the
+     site means any set of copyrightable works thus published on the MMC
+     site.
+
+     "CC-BY-SA" means the Creative Commons Attribution-Share Alike 3.0
+     license published by Creative Commons Corporation, a not-for-profit
+     corporation with a principal place of business in San Francisco,
+     California, as well as future copyleft versions of that license
+     published by that same organization.
+
+     "Incorporate" means to publish or republish a Document, in whole or
+     in part, as part of another Document.
+
+     An MMC is "eligible for relicensing" if it is licensed under this
+     License, and if all works that were first published under this
+     License somewhere other than this MMC, and subsequently
+     incorporated in whole or in part into the MMC, (1) had no cover
+     texts or invariant sections, and (2) were thus incorporated prior
+     to November 1, 2008.
+
+     The operator of an MMC Site may republish an MMC contained in the
+     site under CC-BY-SA on the same site at any time before August 1,
+     2009, provided the MMC is eligible for relicensing.
+
+
+ADDENDUM: How to use this License for your documents
+====================================================
 
 To use this License in a document you have written, include a copy of
 the License in the document and put the following copyright and license
@@ -621,7 +664,7 @@ notices just after the title page:
 
        Copyright (C)  YEAR  YOUR NAME.
        Permission is granted to copy, distribute and/or modify this document
-       under the terms of the GNU Free Documentation License, Version 1.2
+       under the terms of the GNU Free Documentation License, Version 1.3
        or any later version published by the Free Software Foundation;
        with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
        Texts.  A copy of the license is included in the section entitled ``GNU
@@ -644,7 +687,7 @@ free software license, such as the GNU General Public License, to
 permit their use in free software.
 
 
-File: hello.info,  Node: Concept index,  Prev: Copying this manual,  Up: Top
+File: hello.info,  Node: Concept index,  Prev: GNU Free Documentation License,  Up: Top
 
 Concept index
 *************
@@ -652,70 +695,64 @@ Concept index
  [index ]
 * Menu:
 
-* --greeting:                            Invoking hello.       (line 14)
-* --help <1>:                            Invoking hello.       (line 18)
-* --help:                                Overview.             (line 39)
-* --next-generation:                     Invoking hello.       (line 29)
-* --traditional:                         Invoking hello.       (line 34)
-* --version:                             Invoking hello.       (line 39)
-* -g:                                    Invoking hello.       (line 14)
-* -h:                                    Invoking hello.       (line 18)
-* -n:                                    Invoking hello.       (line 29)
-* -t:                                    Invoking hello.       (line 34)
-* -v:                                    Invoking hello.       (line 39)
-* authors:                               Overview.             (line 57)
-* Autoconf:                              Overview.             (line 28)
-* Automake:                              Overview.             (line 28)
-* Berry, Karl:                           Overview.             (line 57)
-* Brittenson, Jan:                       Overview.             (line 57)
+* --greeting:                            Invoking hello.       (line 16)
+* --help <1>:                            Invoking hello.       (line 20)
+* --help:                                Overview.             (line 36)
+* --next-generation:                     Invoking hello.       (line 31)
+* --traditional:                         Invoking hello.       (line 38)
+* --version:                             Invoking hello.       (line 42)
+* -g:                                    Invoking hello.       (line 16)
+* -h:                                    Invoking hello.       (line 20)
+* -n:                                    Invoking hello.       (line 31)
+* -t:                                    Invoking hello.       (line 38)
+* -v:                                    Invoking hello.       (line 42)
+* authors:                               Overview.             (line 54)
+* Autoconf:                              Overview.             (line 25)
+* Automake:                              Overview.             (line 25)
+* Berry, Karl:                           Overview.             (line 54)
+* Brittenson, Jan:                       Overview.             (line 54)
 * bug reporting:                         Reporting bugs.       (line  6)
 * checklist for bug reports:             Reporting bugs.       (line  9)
-* Eichwalder, Karl:                      Overview.             (line 57)
-* environment variables, help for:       Invoking hello.       (line 21)
+* Eichwalder, Karl:                      Overview.             (line 54)
+* environment variables, help for:       Invoking hello.       (line 23)
 * examples:                              Sample output.        (line  6)
-* FDL, GNU Free Documentation License:   GNU Free Documentation License.
-                                                               (line  6)
-* Friedman, Noah:                        Overview.             (line 57)
-* Gettext:                               Overview.             (line 35)
-* GNU coding standards:                  Overview.             (line 20)
-* GNU maintainer standards:              Overview.             (line 20)
-* Gnulib:                                Overview.             (line 32)
+* Friedman, Noah:                        Overview.             (line 54)
+* Gettext:                               Overview.             (line 32)
+* GNU coding standards:                  Overview.             (line 17)
+* GNU maintainer standards:              Overview.             (line 17)
+* Gnulib:                                Overview.             (line 29)
 * greetings:                             Overview.             (line  6)
-* Haertel, Mike:                         Overview.             (line 57)
-* Hannum, Charles:                       Overview.             (line 57)
+* Haertel, Mike:                         Overview.             (line 54)
+* Hannum, Charles:                       Overview.             (line 54)
 * help:                                  Invoking hello.       (line  6)
-* Help2man:                              Overview.             (line 43)
+* Help2man:                              Overview.             (line 40)
 * invoking:                              Invoking hello.       (line  6)
-* joke, not:                             Overview.             (line 15)
-* King, The:                             Overview.             (line 57)
-* MacKenzie, David:                      Overview.             (line 57)
-* McGrath, Roland:                       Overview.             (line 57)
-* modern:                                Invoking hello.       (line 34)
+* joke, not:                             Overview.             (line 12)
+* King, The:                             Overview.             (line 54)
+* MacKenzie, David:                      Overview.             (line 54)
+* McGrath, Roland:                       Overview.             (line 54)
+* modern:                                Invoking hello.       (line 38)
 * options:                               Invoking hello.       (line  6)
 * overview:                              Overview.             (line  6)
 * patches, contributing:                 Reporting bugs.       (line 32)
 * problems:                              Reporting bugs.       (line  6)
 * reporting bugs:                        Reporting bugs.       (line  6)
 * sample output:                         Sample output.        (line  6)
-* standards, GNU coding:                 Overview.             (line 20)
-* standards, GNU maintainer:             Overview.             (line 20)
-* tail recursion:                        Concept index.        (line  6)
-* Texinfo:                               Overview.             (line 48)
-* traditional:                           Invoking hello.       (line 34)
-* Unicode:                               Invoking hello.       (line 29)
+* standards, GNU coding:                 Overview.             (line 17)
+* standards, GNU maintainer:             Overview.             (line 17)
+* Texinfo:                               Overview.             (line 45)
+* traditional:                           Invoking hello.       (line 38)
 * usage:                                 Invoking hello.       (line  6)
-* UTF-8:                                 Invoking hello.       (line 29)
 
 
 
 Tag Table:
-Node: Top1062
-Node: Overview1510
-Node: Sample output4114
-Node: Invoking hello4514
-Node: Reporting bugs5662
-Node: Copying this manual6929
-Node: GNU Free Documentation License7174
-Node: Concept index29583
+Node: Top829
+Node: Overview1292
+Node: Sample output3805
+Node: Invoking hello4203
+Node: Reporting bugs5683
+Node: GNU Free Documentation License6959
+Node: Concept index32134
 
 End Tag Table

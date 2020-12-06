@@ -9,23 +9,21 @@
 This manual is for GNU Hello (version @value{VERSION}, @value{UPDATED}),
 which prints a friendly greeting (and serves as an example GNU package).
 
-Copyright @copyright{} 1992, 1993, 1996, 2002, 2005, 2006, 2007 Free
-Software Foundation, Inc.
+Copyright @copyright{} 1992, 1993, 1996, 2002, 2005, 2006, 2007, 2008
+Free Software Foundation, Inc.
 
 @quotation
 Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.2 or
 any later version published by the Free Software Foundation; with no
-Invariant Sections, with the Front-Cover Texts being ``A GNU Manual,''
-and with the Back-Cover Texts as in (a) below.  A copy of the license
-is included in the section entitled ``GNU Free Documentation
-License.''
-
-(a) The FSF's Back-Cover Text is: ``You are free to copy and modify
-this GNU Manual. Buying copies from GNU Press supports the FSF in
-developing GNU and promoting software freedom.''
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled
+``GNU Free Documentation License''.
 @end quotation
 @end copying
+@c If your manual is published on paper by the FSF, it should include
+@c the standard FSF Front-Cover and Back-Cover Texts, as given in
+@c maintain.texi.
 
 @c Define a new index for options.
 @defcodeindex op
@@ -59,10 +57,10 @@ This manual is for GNU Hello (version @value{VERSION}, @value{UPDATED}).
 
 @menu
 * Overview::		General purpose and information.
-* Sample output::	Sample output from @code{hello}.
-* Invoking hello::	How to run @code{hello}.
+* Sample output::	Sample output from @command{hello}.
+* Invoking hello::	How to run @command{hello}.
 * Reporting bugs::	Sending bug reports and feature suggestions.
-* Copying this manual:: Copying and sharing this documentation.
+* GNU Free Documentation License:: Copying and sharing this documentation.
 * Concept index::	Index of concepts.
 @end menu
 
@@ -73,14 +71,12 @@ This manual is for GNU Hello (version @value{VERSION}, @value{UPDATED}).
 @cindex greetings
 @cindex overview
 
-The GNU @code{hello} program produces a familiar, friendly greeting.
-It allows nonprogrammers to use a classic computer science tool which
-would otherwise be unavailable to them.  Because it is protected by
-the GNU General Public License, users are free (in perpetuity) to
-share and change it.
-
-For the latest updates and other information, please visit the GNU
-Hello home page at @url{http://www.gnu.org/software/hello/}.
+The GNU @command{hello} program
+(@url{http://www.gnu.org/software/hello/}) produces a familiar,
+friendly greeting.  It allows nonprogrammers to use a classic computer
+science tool which would otherwise be unavailable to them.  Because it
+is protected by the GNU General Public License, users are free (in
+perpetuity) to share and change it.
 
 @cindex joke, not
 Not to spoil the joke, but of course the practical purpose of GNU
@@ -145,7 +141,7 @@ HTML, PDF, DVI, plain text, XML, and other formats.
 
 GNU Hello is implemented in C.  GNU Gettext contains ``hello world''
 examples in a variety of other programming languages; see the Gettext
-home page at @url{http://www.gnu.org/software/gettext/}.
+home page at @url{http://www.gnu.org/software/gettext/}.  
 
 @cindex authors
 @cindex Haertel, Mike
@@ -157,7 +153,7 @@ home page at @url{http://www.gnu.org/software/gettext/}.
 @cindex Eichwalder, Karl
 @cindex King, The
 @cindex Berry, Karl
-GNU @code{hello} was written by Mike Haertel, David MacKenzie, Jan
+GNU Hello was written by Mike Haertel, David MacKenzie, Jan
 Brittenson, Charles Hannum, Roland McGrath, Noah Friedman, Karl
 Eichwalder, Karl Berry, and @w{The King}.
 
@@ -168,7 +164,7 @@ Eichwalder, Karl Berry, and @w{The King}.
 @cindex sample output
 @cindex examples
 
-Here are some realistic examples of running GNU @code{hello}.
+Here are some realistic examples of running GNU Hello.
 
 This is the output of the command @samp{hello}:
 
@@ -190,27 +186,30 @@ hi
 
 
 @node Invoking hello
-@chapter Invoking @code{hello}
+@chapter Invoking @command{hello}
 
 @cindex invoking
 @cindex options
 @cindex usage
 @cindex help
 
-The format for running the @code{hello} program is:
+The format for running the @command{hello} program is:
 
 @example
 hello @var{option} @dots{}
 @end example
 
-@code{hello} supports the following options:
+With no options, @command{hello} prints the greeting @samp{Hello,
+world!}.
+
+@command{hello} supports the following options:
 
 @table @option
 @item --greeting=@var{text}
 @itemx -g @var{text}
 @opindex --greeting
 @opindex -g
-Output @var{text}.
+Output @var{text} instead of the default greeting.
 
 @item --help
 @itemx -h
@@ -230,10 +229,10 @@ be mentioned (Hello doesn't have any).
 @itemx -n
 @opindex --next-generation
 @opindex -n
-@cindex Unicode
-@cindex UTF-8
-Output a modern greeting, possibly including box-drawing
-characters or other fancy stuff, using the Unicode UTF-8 locale.
+Output @samp{Hello, world!}, but possibly including box-drawing
+characters or other fancy stuff, especially in translated locales.
+(If you would like to volunteer to translate messages for GNU packages,
+please see @url{http://translationproject.org}.)
 
 @item --traditional
 @itemx -t
@@ -241,17 +240,20 @@ characters or other fancy stuff, using the Unicode UTF-8 locale.
 @opindex -t
 @cindex traditional
 @cindex modern
-Use the traditional greeting message @samp{hello, world} rather
-than the more modern @samp{Hello, world!}.
+Output the traditional greeting message @samp{hello, world}.
 
 @item --version
 @itemx -v
 @opindex --version
 @opindex -v
-Print the version number and licensing information of @code{hello} on
+Print the version number and licensing information of Hello on
 standard output and then exit successfully.
 
 @end table
+
+If more than one of the greeting options (@option{-g}, @option{-n},
+@option{-t}, and their long-named equivalents) is specified, whichever
+comes last takes precedence.
 
 
 @node Reporting bugs
@@ -261,7 +263,7 @@ standard output and then exit successfully.
 @cindex problems
 @cindex reporting bugs
 
-To report bugs or suggest enhancements for GNU @code{hello}, please
+To report bugs or suggest enhancements for GNU Hello, please
 send electronic mail to @email{bug-hello@@gnu.org}.
 
 @cindex checklist for bug reports
@@ -291,12 +293,8 @@ include @file{ChangeLog} entries (@pxref{Change Log,,, emacs, The GNU
 Emacs Manual}).  Please follow the existing coding style.
 
 
-@node Copying this manual
-@appendix Copying this manual
-
-@menu
-* GNU Free Documentation License::  License for copying this manual.
-@end menu
+@node GNU Free Documentation License
+@appendix GNU Free Documentation License
 
 @include fdl.texi
 
@@ -304,7 +302,6 @@ Emacs Manual}).  Please follow the existing coding style.
 @node Concept index
 @unnumbered Concept index
 
-@cindex tail recursion
 @printindex cp
 
 @bye
