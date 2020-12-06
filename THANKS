@@ -15,9 +15,11 @@ Thanks to:
 
     Paul Eggert for feedback and patches.
 
+    Fabrice Bauzac and Thomas Bushnell.
+
 Thanks to all the translators (run 'grep -e ^\"Last-Translator: po/*.po').
 
-Fuerth, 2001-05-16
+Fuerth, 2002-06-08
 --
 work : ke@suse.de                          |                   ,__o
      : http://www.suse.de/~ke/             |                 _-\_<,

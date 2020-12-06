@@ -1,3 +1,20 @@
+2002-06-09  Karl Eichwalder  <keichwa@gmx.net>
+
+	* Release 2.1.1.
+
+2002-06-08  Karl Eichwalder  <keichwa@gmx.net>
+
+	* configure.ac (AC_INIT): Replace use of the zero-arg form of
+	AC_INIT with a use of the 3-arg form.
+	* configure.ac (AM_INIT_AUTOMAKE): Use zero-arg form of this
+	macro.
+
+	* configure.ac: 2.1.1, ke_PRE: 2.1.0.
+
+2002-05-22  Karl Eichwalder  <keichwa@gmx.net>
+
+	* Release 2.1.0.
+
 2002-05-25  Karl Eichwalder  <ke@gnu.franken.de>
 
 	* configure.ac: Set official bug report address.

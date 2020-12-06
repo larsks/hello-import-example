@@ -1,7 +1,7 @@
 Dies ist hello.info, hergestellt von Makeinfo Version 4.2 aus
 hello.texi.
 
-This file documents the the GNU `hello' command for printing a greeting
+This file documents the GNU `hello' command for printing a greeting
 message.
 
    Copyright (C) 1992, 1993, 1996, 2002 Free Software Foundation, Inc.
@@ -540,13 +540,13 @@ Concept Index
 
 
 Tag Table:
-Node: Top1082
-Node: Instructions1493
-Node: Copying1981
-Node: Overview21173
-Node: Sample21704
-Node: Invoking hello22432
-Node: Problems23064
-Node: Concept Index23693
+Node: Top1078
+Node: Instructions1489
+Node: Copying1977
+Node: Overview21169
+Node: Sample21700
+Node: Invoking hello22428
+Node: Problems23060
+Node: Concept Index23689
 
 End Tag Table

@@ -1,16 +1,15 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT
+AC_INIT(hello, 2.1.1, bug-gnu-hello@gnu.org)
 AC_CONFIG_SRCDIR([src/hello.c])
 
 AC_PREREQ(2.52)
 
-dnl AM_INIT_AUTOMAKE(hello, 1.3.32,hello-list@gnu.franken.de)
-AC_SUBST(ke_PRE, 2.0.60)
-AM_INIT_AUTOMAKE(hello, 2.1.0)
+AC_SUBST(ke_PRE, 2.1.0)
+AM_INIT_AUTOMAKE
 AM_CONFIG_HEADER(config.h)
-AC_SUBST(PACKAGE_BUGREPORT, bug-gnu-hello@gnu.org)
-AH_TEMPLATE(PACKAGE_BUGREPORT)
-AC_DEFINE_UNQUOTED(PACKAGE_BUGREPORT, "$PACKAGE_BUGREPORT")
+dnl AC_SUBST(PACKAGE_BUGREPORT, bug-gnu-hello@gnu.org)
+dnl AH_TEMPLATE(PACKAGE_BUGREPORT)
+dnl AC_DEFINE_UNQUOTED(PACKAGE_BUGREPORT, "$PACKAGE_BUGREPORT")
 
 dnl Set of available languages now in po/LINGUAS.
 
